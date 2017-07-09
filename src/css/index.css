@@ -1,0 +1,460 @@
+html {
+    font-family: PingFangSC-Regular, sans-serif;
+}
+
+*{
+    padding:0;
+    margin: 0;
+}
+
+.app {
+    max-width: 1920px;
+    margin:0 auto;
+}
+
+.darkbgcolor {
+    background-color: #316665;
+}
+
+
+.bgcolor {
+    background: #e1e6e6;
+}
+
+
+.navwrapper {
+    position: relative;
+    height: 1.5rem;
+    font-size: 0.1354rem;
+    color: white;
+}
+
+.center-y {
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+
+.navwrapper .logo {
+    position:absolute;
+    left: 15.625%;
+    height: 24%;
+    z-index: 110;
+}
+
+.nav-list {
+    position: absolute;
+    right: 15.625%;
+}
+
+.seperator{
+    background: #51baa0;
+    width: 2px;
+    height: .3rem;
+    margin:0 .3rem;
+    transform: translateY(3px);
+}
+
+.nav-list li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+
+.nav-list .active{
+    color:white;
+}
+
+.nav-list .active:before{
+    content: "";
+    position: absolute;
+    top: -128%;
+    left: 0;
+    width: 100%;
+    height: .1rem;
+    background-color: #51b1a0;
+}
+
+.nav-list a{
+    font-size: .3rem;
+    color:#a0a0a0;
+    text-decoration: none;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+    display: block;
+}
+
+.sologen {
+    position: absolute;
+    left: 16.625%;
+    top: 11.98%;
+    color: white;
+}
+
+
+@media screen and (max-width:720px){
+  .sologen .jianxiang {
+        font-size: .5rem;
+    }  
+}
+
+@media screen and (min-width:720px){
+  .sologen .jianxiang {
+        font-size: 1.5rem;
+    }  
+}
+
+
+.sologen .amazing {
+    font-size: 46px;
+}
+
+.sologen .sologen-content {
+    font-size: 26px;
+}
+
+
+
+.aboutus {
+    position: relative;
+}
+
+.aboutus .ab-data-title {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    margin-top:0;
+}
+.aboutus img{
+    display: block;
+/*    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);*/
+    width: 68.8%;
+    margin: 0 auto;
+}
+
+.aboutus-inner{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    margin-top: 0;
+    font-size: .3rem;
+    color: #647a78;
+    line-height: .6rem;
+}
+
+
+
+
+.gallery-title {
+    padding: 85px 0;
+    text-align: center;
+    font-size: 22px;
+    color: #647a78;
+}
+
+.title-left {
+    display: inline-block;
+    margin-right: 27px;
+    height: 20px;
+    width: 4px;
+    background: #5ab1a0;
+    transform: translateY(3px);
+}
+
+.title-right {
+    display: inline-block;
+    margin-left: 27px;
+    height: 20px;
+    width: 4px;
+    background: #5ab1a0;
+    transform: translateY(3px);
+}
+
+
+.gallery-list {
+    margin:0 auto;
+    width: 68.65%;
+    overflow: hidden;
+}
+
+.gallery-list li {
+    position: relative;
+    list-style: none;
+    float: left;
+    width: 50%;
+}
+.gallery-list li img{
+    width: 100%;
+}
+
+.gallery-item-title {
+    position: absolute;
+    left: 5.46%;
+    top: 13.68%;
+    font-size: 38px;
+    color: white;
+}
+.gallery-item-subtitle {
+    position: absolute;
+    left: 10.64%;
+    top: 43.86%;
+    font-size: 20px;
+    color: white;
+}
+
+.divideline {
+    width: 68.65%;
+    height: 2px;
+    margin:85px auto;
+}
+
+.tail {
+    font-size: 16px;
+    color: rgba(255,255,255,.6);
+    padding: 60px 0;
+    text-align: center;
+}
+
+
+/*mcn*/
+
+.sologen-mcn {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.sologen-mcn .sologen-content{
+    font-size: .4rem;
+}
+
+.intro-mcn {
+    font-size: 26px;
+    color: #647a78;
+    text-align: center;
+    padding:1rem;
+    background: white;
+}
+
+
+.alien-data-title {
+    position: relative;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 1.2rem;
+
+}
+
+.two-sider-column {
+    color: #647a78;
+    font-size: 22px;
+    display: inline;
+    position: relative;
+}
+
+.two-sider-column:before {
+    content: "";
+    position: absolute;
+    left: -.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    background: #2db49f;
+    height: 31px;
+}
+
+.two-sider-column:after {
+    content: "";
+    position: absolute;
+    right: -.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    background: #2db49f;
+    height: 31px;
+}
+
+.alien-data {
+    margin: 85px auto;
+}
+
+.alien-data-item {
+    display: inline-block;
+}
+
+.alien-item-title {
+    font-size: 30px;
+    color: black;
+}
+
+.alien-middle-divider {
+    margin: 0 75px;
+}
+
+.alien-item-data  {
+    font-size: 22px;
+    color: #647a78;
+}
+
+.parterner-data {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 85px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.parterner-data-item {
+    display: inline-block;
+    width: 18%;
+    margin: 3%;
+    float: left;
+}
+.parterner-data-item img {
+    display: inline-block;
+    width: 70%;
+}
+
+.parterner-item-title {
+    margin-top: 33px;
+    font-size: .5rem;
+    color: black;
+}
+
+.parterner-item-data {
+    margin-top: 18px;
+    font-size: .3rem;
+    color: #647a78;
+}
+
+.other-partner {
+    padding-top: 85px;
+    padding-bottom: 130px;
+    background-color: white;
+}
+
+.zhanlue-partner {
+    margin-top: 85px;
+    text-align: center;
+}
+
+.divider85 {
+    margin: 0 80px;
+}
+
+.zhanlue-partner img{
+    display: inline-block;
+    width: 9.9%;
+}
+
+.partner-channel {
+    display: block;
+    width: 68.75%;
+    margin:85px auto;
+
+}
+
+.joinus {
+    text-align: center;
+}
+
+.wanted {
+    display: inline-block;
+    text-align: left;
+    font-size: 22px;
+    color: #647a78;
+    margin: 85px 0;
+}
+
+.joinbtn {
+    display: block;
+    margin:0 auto;
+    width: 13.35%;
+}
+
+
+
+/*about*/
+
+.about-sologen {
+    letter-spacing: .3rem;
+    font-size: .9rem;
+    color: #166866;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+
+.aboutus-content {
+    line-height: .8rem;
+    margin: .5rem 0;
+    font-size: .35rem;
+    text-align: center;
+    color: #647a78;
+
+}
+
+.companyname {
+    font-size: .3rem;
+    color: #647a78;
+    padding-left: 15%;
+    padding-bottom: 2%;
+}
+
+.contact {
+    padding:0 9.4%;
+    position: relative;
+    margin: 40px 80px;
+    color: #647a78;
+}
+
+.contact .c-name {
+    font-size: .2rem;
+}
+
+.contact .c-value {
+    margin-top: .4rem;
+    font-size: .15rem;
+}
+
+.contact-tel {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+
+.contact-email {
+    position: absolute;
+    right: 11%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+
+

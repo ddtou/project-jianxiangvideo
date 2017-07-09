@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>见响视频</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        !function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("将根据已有的meta标签来设置缩放比例");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=(a.navigator.appVersion.match(/android/gi),a.navigator.appVersion.match(/iphone/gi)),q=a.devicePixelRatio;i=p?q>=3&&(!i||i>=3)?3:q>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var r=e.createElement("div");r.appendChild(g),e.write(r.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
+    </script>
+</head>
+<body>
+    <div class="app bgcolor">
+        <div class="navwrapper darkbgcolor">
+            <img class="logo center-y" src="./img/index/logo.png" alt="logo"> 
+            <ul class="nav-list center-y">
+               <li class="nav-item"><a  href=".">见响视频</a></li>
+               <li class="seperator"></li> 
+               <li class="nav-item"><a href="mcn.html">MCN</a></li> 
+               <li class="seperator"></li> 
+               <li class="nav-item"><a class="active" href="about.html">关于我们</a></li> 
+            </ul>  
+        </div>
+        <div class="banner">
+            <img src="./img/about/aboutbanner.jpg" alt="" class="banner-bg">
+            <div class="about-sologen">
+                关于我们
+            </div>
+        </div>
+
+
+
+        <div class="alien-data-title">
+            <div class="two-sider-column">见响视频 | AMAZING VIDEO</div>
+        </div>
+
+
+        <div class="aboutus-content">
+            国内领先的移动短视频内容矩阵<br>
+            时尚集团战略合作<br>
+            打造次世代的高品质生活方式短视频品牌
+        </div>
+
+        <div class="companyname">北京时尚新势力文化传播有限公司</div>
+        <div class="aboutus bgcolor">
+            <img src="./img/about/map.png" alt="">
+        </div>
+        
+
+        <div class="contact">
+            <div class="contact-address">
+                <div class="c-name">地址</div>
+                <div class="c-value">北京朝阳区三里屯SOHO办公A座710</div>
+            </div>
+            
+            <div class="contact-tel">
+                <div class="c-name">电话</div>
+                <div class="c-value">北京朝阳区三里屯SOHO办公A座710</div>
+            </div>
+
+            <div class="contact-email">
+                <div class="c-name">地址</div>
+                <div class="c-value">北京朝阳区三里屯SOHO办公A座710</div>
+            </div>
+        </div>
+
+        <div class="divideline darkbgcolor"></div>
+            
+        <div class="tail darkbgcolor">
+            <div class="tail-address">
+                北京时尚新势力文化传播有限公司 地址：北京朝阳区三里屯SOHO办公A座710 电话：010-57274211 邮箱：cooperation@hlamazing.com
+            </div>
+
+            <div class="copyright">
+                &copy;<span id="copyright-year"></span> Amazing video,Inc.Copyrights all reserved.京ICP备17013696
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script>
+    var c = document.getElementById('copyright-year');
+    c.innerHTML = new Date().getFullYear();
+</script>
+
+
